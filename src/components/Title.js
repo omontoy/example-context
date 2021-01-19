@@ -17,7 +17,10 @@ class Title extends Component {
         <AuthContext.Consumer>
           {({title}) => {
             return (
-              <h2>{this.context.title}</h2>
+              <div>
+                <h2>{this.context.title}</h2>
+                <h3>Título adicional</h3>
+              </div>
             )
           }}
         </AuthContext.Consumer> 
