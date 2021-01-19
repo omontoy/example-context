@@ -15,6 +15,7 @@ function Navbar() {
               <div>
                 <p>{currentUser}</p>
                 <p>{process.env.REACT_APP_NAME}</p>
+                <p>Párrafo solamente en dev</p>
               </div>
             )
           }}
