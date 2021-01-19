@@ -1,4 +1,4 @@
-import { Component } from 'react'
+
 import { AuthContext } from '../store/AuthContext'
 
 function Navbar() {
@@ -12,7 +12,10 @@ function Navbar() {
         <AuthContext.Consumer>
           {({currentUser}) => {
             return (
-              <p>{currentUser}</p>
+              <div>
+                <p>{currentUser}</p>
+                <p>{process.env.REACT_APP_NAME}</p>
+              </div>
             )
           }}
         </AuthContext.Consumer>
